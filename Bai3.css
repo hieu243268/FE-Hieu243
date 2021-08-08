@@ -1,0 +1,42 @@
+.header{
+    height: 150px;
+    width: auto;
+    background-color:mediumturquoise;
+    box-shadow: 5px 5px 5px darkseagreen;
+   
+}
+body{
+    margin: 0px;
+}
+.content{
+    margin-left: 100px;
+    padding: auto;
+}
+.content1{
+    margin-left: 100px;
+    text-align: justify;
+    height: 125px;
+}
+.content2{
+    height: 25px;
+    margin-left: 100px;
+    color: royalblue;
+    font-weight: bold;
+}
+.Khung{
+    margin-top: 50px;
+    border: 3px solid rosybrown;
+    width: 300px;
+    height: 350px;
+    margin-left: 100px;
+}
+.content3{
+    margin-left: 25px;
+}
+.footer{
+    height: 150px;
+    width: auto;
+    background-color:mediumturquoise;
+    box-shadow: 5px 5px 5px darkseagreen;
+   
+}
