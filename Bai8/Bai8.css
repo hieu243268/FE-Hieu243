@@ -1,6 +1,17 @@
-body{
+*{
+    padding: 0;
     margin: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box; 
 }
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.rounded {
+    border-radius: 50%;
+}
+
 .header{
     height: 75px;
     background-color:mediumturquoise;
@@ -36,7 +47,7 @@ body{
     position: relative;
 }
 .background{
-    background-image: url("../banner.jpg");
+    background-image: url(banner.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -54,6 +65,7 @@ body{
     top: 200px;
     transform: translate(-50%,-50%);
 }
+
 .course-name1{
     position: absolute;
     color: white;
@@ -77,20 +89,7 @@ body{
     text-align: center;
 
 }
-.main-intro::before{
-    content: '\266C';
-    font-size: 30px;
-    color: aqua;
-    margin-right: 20px;
-    
-}
-.main-intro::after{
-    content: '\266C';
-    font-size: 30px;
-    color: aqua;
-    margin-left: 20px;
-    
-}
+
 
 .Title1{
     text-align: center;
@@ -101,31 +100,36 @@ body{
     padding-bottom: 25px;
     
 }
-.distance{
-    margin-left: 200px;
-}
-.source-card{
-    display: inline-block;
-    width: 250px;
-    margin-left: 20px;
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
     
 }
-.card{
-    background-image: url("../abc (1).png"); 
+.source-card{
+    position: relative;
+}
+
+
+.source-image{
+    background-image: url(abc.png); 
     background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 150px;
+    
+    height: 144px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
-.card1{
+.source-content{
     border: 1px solid red;
-    padding: 15px;
+    padding: 30px;
     transition: 1s all;
+    background-color: antiquewhite;
 }
-.card1:hover{
+.source-content:hover{
     box-shadow: 3px 3px 4px black;
 }
 h2{
@@ -135,7 +139,7 @@ h2{
 .image-background {
     width: 250px;
     height: 160px;
-    background-image: url('../my-tam-teacher.jpg');
+    background-image: url(my-tam-teacher.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -175,6 +179,7 @@ h2{
     display: inline-flex;
     margin-left: 10px;
 }
+
 .course-number {
     position: absolute;
     bottom: 10px;
@@ -205,40 +210,36 @@ h2{
     font-weight: lighter;
     
 }
-.picture-block2{
-    background-image: url('../abc (1).png');
-    height: 350px;
-    width: 500px;
-    margin-left: 220px;
+.contact-container{
+    display: flex;
+}
+.contact-img{
+    background-image: url(abc.png);
+    height: 400px;
+    width: 50%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     float: left;
 
 }
-.Register{
-    width: 570px;
-    height: 350px;
-    border: 1px solid red;
-    float: left;
-    border-bottom-left-radius: 5px;
-    border-top-left-radius: 5px;
+.contact-container .contact-form {
+    width: 50%;
+    height: 400px;
+    padding: 20px 20px 20px 50px;
+    border: 1px solid #cacaca;
+    border-left: none;
 }
-input[type=email]{
-    width: 90%;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    resize: vertical;
+.contact-container .contact-form  .form-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
 }
-input[type=number]{
-    width: 90%;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    resize: vertical;
+.contact-container .contact-form  .form-item label {
+    width: 150px;
 }
-input[type=text]{
+
+input{
     width: 90%;
     padding: 8px;
     border: 1px solid #ccc;
@@ -250,36 +251,31 @@ input[type=text]{
 label{
     margin-left: 40px;
 }
-.col-25 {
-    float: left;
-    width: 25%;
-    margin-top: 4px;
-}
   
-.col-75 {
-    float: left;
-    width: 75%;
-    margin-top: 4px;
-}
-input[type=submit] {
-    background-color: #3bdaf7;
+
+.register-now{
+    background-color: aqua;
+    border: none;
+    border-radius: 5px;
     color: white;
-    margin-top: 20px;
-    padding: 5px 15px;
-    border-radius: 4px;
-    cursor: pointer;
+    font-size: 18px;
+    padding: 10px 25px;
+    text-transform: uppercase;
+    transition: background-color 0.5s;
     float: right;
-    margin-right: 20px;
+    margin-top: 10px;
 }
-input[type=submit]:hover {
-    background-color: #45a049;
-  }
+.register-now:hover{
+    background-color: yellow;
+}
 footer{
-    margin-top: 400px;
+
     height: 150px;
     width: auto;
     background-color:mediumturquoise;
     box-shadow: 5px 5px 5px darkseagreen;
+    padding: 30px 0;
+
 }
 .address{
     width: 50%;
@@ -289,4 +285,73 @@ footer{
     width: 50%;
     float: left;
     color: aliceblue;
+}
+.flash-sale-container{
+    background-color: red;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 7px;
+    padding: 15px;
+    margin-top: 50px;
+    
+}
+.flash-sale-container h1 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.flash-sale-container .countdown-item {
+    display: inline-block;
+    padding: 5px 7px;
+    background-color: white;
+    margin-right: 5px;
+}
+.buy-source-card{
+    background-color: yellow;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 3px;
+    cursor: pointer;
+    
+}
+.purchase-item {
+    width: 300px;
+    padding: 15px;
+    background-color: #1dc1ff;
+    border-radius: 7px;
+    position: fixed;
+    bottom: -200px;
+    opacity: 0;
+    transition: all 1s;
+}
+
+.purchase-item p {
+    font-style: italic;
+    margin-top: 10px;
+}
+
+.brought-number-info {
+    position: fixed;
+    bottom: 200px;
+    right: 50px;
+    background-color: red;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: white;
+    flex-direction: column;
+}
+
+#bought-number {
+    margin-top: 7px;
+    font-size: 20px;
+}
+.main-content{
+    padding: 15px;
 }
