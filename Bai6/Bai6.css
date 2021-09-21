@@ -1,0 +1,571 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.content-left{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+ul{
+ list-style-type: none;
+}
+.icons{
+    font-size: 20px;
+    display: flex;
+    margin-left: 50px;
+    align-items: center;
+    position: relative;
+    margin-top: 5px;
+    
+
+}
+.icon{
+    color: whitesmoke;
+    margin-left: 30px;
+}
+.menu li{
+    position: relative;
+    font-style: normal;
+    display: inline-block;
+    color: whitesmoke;
+    margin-left: 15px;
+}
+.content-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: black;
+    height: 40px;
+}
+.content-right{
+    position: relative;
+    font-style: normal;
+    display: flex;
+    color: burlywood;
+    align-items: center;
+    margin-left: 5px;
+
+
+}
+.page-wrapper{
+    position: relative;
+}
+.page-wrapper-background{
+    background-image: url(curly_hair_white-1.JPG);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 600px;
+    position: relative;
+
+}
+.backdrop{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.content-header-page-wrapper{
+    display: flex;
+    height: 90px;
+    position: relative;
+    padding-left: 30px;
+    padding-right: 30px;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.fas fa-bars{
+    position: absolute;
+}
+
+.bars{
+    font-size: 30px;
+}
+.header-left{
+    display: flex;
+    text-align: left;
+    justify-content: flex-start;
+    flex: 1;
+}
+.primary-menu{
+    display: flex;
+    align-items: center;
+}
+li{
+    margin-left: 20px;
+    
+}
+.active{
+    border-bottom: aquamarine 3px solid;
+}
+.header-middle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    
+
+}
+.header-middle-logo{
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+    flex: initial;
+}
+.header-right-icons{
+    display: flex;
+}
+.header-right{
+    display: flex;
+    text-align: right;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 1;
+    
+}
+.icon-header-right{
+    color: black;
+    margin-left: 40px;
+}
+.content-main{
+    margin-top: 150px;
+    margin-right: 200px; 
+    float: right;
+    text-align: end;
+    
+}
+.content-main-season{
+   font-size: 15px;
+   background-color: black;
+   color: white;
+   margin-bottom: 30px;
+}
+.content-main-fasshion{
+    color: black;
+    font-size: 60px;
+    margin-bottom: 15px;
+    font-style: oblique;
+
+}
+.content-main-shop{
+    color: black;
+    font-size: 15px;
+    font-style: normal;
+}
+.main{
+    padding-top: 0;
+    display: flex;
+}
+.button-up-shirt{
+    position: relative;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.background-button-up-shirt {
+    background-image: url(banner-shirt2-768x976.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 550px;
+    width: 400px;
+    position: relative;
+    transition: 1s all;
+    
+    
+}
+.background-button-up-shirt:hover{
+    transform: scale(1.5,1.5);
+    transform-origin: center;
+
+}
+.effect{
+    height: 550px;
+    width: 400px;
+    overflow: hidden; 
+    
+    
+}
+.content-shirt h2{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    font-style: normal;
+    color: black;
+    padding: 20px 20px;
+    
+}
+.Buy-now{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: beige;
+    margin-top: 100px;
+    padding: 20px 20px;
+    
+}
+.Buy-now:hover{
+    background-color: bisque;
+    
+}
+.Choose-your-price{
+    position: relative;
+    margin-left: 75px;
+    margin-top: 50px;
+}
+.background-Choose-your-price{
+    background-image: url(banner-shirt1-768x976.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 550px;
+    width: 400px;
+    position: relative;
+    transition: 1s all;
+
+}
+.background-Choose-your-price:hover{
+    transform: scale(1.5,1.5);
+    transform-origin: center;
+}
+.Calearance-Sales{
+    position: relative;
+    margin-left: 75px;
+    margin-top: 50px;
+    
+}
+.background-sales{
+    background-color: blanchedalmond;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 550px;
+    width: 400px;
+    position: relative;
+    
+
+}
+.Buy-now3{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: beige;
+    margin-top: 150px;
+    padding: 20px 20px;
+
+}
+.Buy-now3:hover{
+    background-color: bisque;
+}
+.Up-to{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 70px;
+    padding: 50px 50px;
+    
+}
+.content-container-selling{
+    text-align: center;
+}
+h2{
+    margin-top: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: -webkit-center;
+}
+p{
+    margin-top: 10px;
+    font-family: cursive;
+    margin-bottom: 25px;
+}
+.image-content-container{
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+.image-content-container1{
+    position: relative;
+}
+.image-content-container2{
+    position: relative;
+}
+.logo-image-content-container1{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.image1{
+    background-image: url(women-cashmere-a4-450x450.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+     
+    width: 350px; 
+    transition: 1s all;
+
+}
+.image1:hover{
+    transform: scale(1.5,1.5);
+    transform-origin: center;
+}
+
+
+.image2{
+    background-image: url(woman-microbag-a1-450x450.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 350px;
+    transition: 1s all;
+
+}
+.image2:hover{
+    transform: scale(1.5,1.5);
+    transform-origin: center;
+}
+.image-content-container3{
+    position: relative;
+}
+.image3{
+background-image: url(women-cashmere-a3-450x450.jpg);
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+height: 400px;
+width: 350px;
+transition: 1s all;
+
+
+}
+.image3:hover{
+    transform: scale(1.5,1.5);
+    transform-origin: center;
+}
+.new-image-content-container3{
+    background-color: yellow;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.effect1{
+    overflow: hidden;
+    height: 400px;
+    width: 350px;
+   
+    
+}
+.bacground-content-container{
+    background-color: antiquewhite;
+    height: 350px;
+    width: 100%;
+    margin-top: 100px;
+}
+.content-bacground-content-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    
+}
+.tittle{
+    position: absolute;
+    
+    
+}
+.img-info{
+    position: absolute;
+    margin-top: 150px;
+    display: flex;
+
+}
+.image-content-container4{
+    position: relative;
+}
+.image4{
+    background-image: url(woman-hoodie-a6-450x450.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 300px;
+    transition: 1s all;
+    
+    
+    }
+    .image4:hover{
+        transform: scale(1.5,1.5);
+        transform-origin: center;
+    }
+    .new-image-content-container4{
+        background-color: yellow;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        border: none;
+        padding: 5px 15px;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+    .image-content-container1-new{
+        position: relative;
+    }
+    .image-content-container2-new{
+        position: relative;
+    }
+    .logo-image-content-container1-new{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        border: none;
+        padding: 5px 15px;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+    .image1-new{
+        background-image: url(women-cashmere-a4-450x450.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 300px;
+         
+        width: 300px; 
+        transition: 1s all;
+    
+    }
+    .image1-new:hover{
+        transform: scale(1.5,1.5);
+        transform-origin: center;
+    }
+    
+    
+    .image2-new{
+        background-image: url(woman-microbag-a1-450x450.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 300px;
+        width: 300px;
+        transition: 1s all;
+    
+    }
+    .image2-new:hover{
+        transform: scale(1.5,1.5);
+        transform-origin: center;
+    }
+    .image-content-container3-new{
+        position: relative;
+    }
+    .image3-new{
+    background-image: url(women-cashmere-a3-450x450.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 300px;
+    transition: 1s all;
+    
+    
+    }
+    .image3-new:hover{
+        transform: scale(1.5,1.5);
+        transform-origin: center;
+    }
+    .new-image-content-container3-new{
+        background-color: yellow;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        border: none;
+        padding: 5px 15px;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+    .image-content-container-new{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .effect-new{
+        overflow: hidden;
+        height: 300px;
+        width: 300px;
+    }
+    .interview-container{
+        text-align: center;
+    } 
+    .contact-us-container{
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 50px;
+        
+
+    }
+    .main{
+        font-family: monospace;
+        margin-bottom: 15px;
+        
+        padding: 10px 0;
+        text-transform: uppercase;
+        letter-spacing: .1em;
+        font-weight: normal;
+        font-size: 20px;
+        
+    }
+    .page-contact{
+        margin-top: 15px;
+        display: flex;
+        margin-left: 20px;
+    }
+    .sign-contact{
+        text-align: center;
+    }
+    .input-box{
+    display: inline-flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: initial;
+    width: 100%;
+    
+        
+
+    }
+    input{
+    padding: 20px;
+    margin-left: 15px;
+    
+    }
+    input[type=submit]{
+        background-color: black;
+        cursor: pointer;
+        font-size: initial;
+    }
+    .container-footer{
+        display: flex;
+        justify-content: space-between;
+        padding: 30px; 
+    
+    }
